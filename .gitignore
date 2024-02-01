@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Sensitive files
+.env
