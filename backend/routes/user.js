@@ -3,7 +3,8 @@ const zod = require("zod");
 const jwt = require("jsonwebtoken");
 
 const { User, Account } = require("../db.js");
-const { JWT_SECRET } = require("../config.js");
+require("dotenv").config();
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const router = express.Router();
 const { authMiddleware } = require("../middleware.js");
@@ -124,7 +125,7 @@ router.put("/", authMiddleware, async (req, res) => {
 
 // ................searching user in database.....................
 
-router.get("/bulk", authMiddleware,async (req, res) => {
+router.get("/bulk", authMiddleware, async (req, res) => {
 	const filter = req.query.filter || "";
 	const users = await User.find({
 		$or: [

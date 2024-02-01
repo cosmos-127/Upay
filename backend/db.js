@@ -1,8 +1,11 @@
 const mongoose = require("mongoose");
 const { model, Schema } = require("mongoose");
-mongoose.connect(
-	"mongodb+srv://gaganparashar127:gagan127@cluster0.qhp2flf.mongodb.net/"
-);
+require("dotenv").config();
+const databaseUrl = process.env.DATABASE_URL;
+mongoose
+	.connect(databaseUrl)
+	.then(() => console.log("MongoDB connected"))
+	.catch((err) => console.error("MongoDB connection error:", err));
 
 const userSchema = new Schema({
 	firstName: { type: String, required: true, trim: true },
