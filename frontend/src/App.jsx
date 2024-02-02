@@ -3,18 +3,13 @@ import Signup from "./screens/Signup";
 import Signin from "./screens/Signin";
 import Dashboard from "./screens/Dashboard";
 import { SendMoney } from "./screens/SendMoney";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-function App() {
-	const navigate = useNavigate();
 
-	useEffect(() => {
-		navigate("/signin"); 
-	}, [navigate]);
+function App() {
 	return (
 		<>
 			<BrowserRouter>
 				<Routes>
+					<Route path="/" element={<Signin />} />
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/signin" element={<Signin />} />
 					<Route path="/dashboard" element={<Dashboard />} />
