@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import SecondaryButton from "../components/SecondaryButton";
-import { baseURL } from "../url";
+import { backendURL } from "../url";
 
 // successful transaction animation
 import { ToastContainer, toast } from "react-toastify";
@@ -66,7 +66,7 @@ export const SendMoney = () => {
 									try {
 										axios
 											.post(
-												`${baseURL}/api/v1/account/transfer`,
+												`${backendURL}/api/v1/account/transfer`,
 												{ to: id, amount: amount },
 												{
 													headers: {
