@@ -3,7 +3,7 @@ import Signup from "./screens/Signup";
 import Signin from "./screens/Signin";
 import Dashboard from "./screens/Dashboard";
 import { SendMoney } from "./screens/SendMoney";
-
+import "./index.css";
 
 function App() {
 	return (
