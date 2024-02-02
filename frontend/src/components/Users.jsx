@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { backendURL } from "../url";
+import PrimaryButton from "./PrimaryButton";
 
 function Users() {
 	const [users, setUsers] = useState([]);
@@ -63,17 +64,16 @@ function User({ user }) {
 			</div>
 
 			<div className="flex flex-col justify-center h-ful">
-				<button
+				<PrimaryButton
 					onClick={() => {
 						navigate(
 							"/send?id=" + user._id + "&name=" + user.firstName
 						);
 					}}
-					className="cursor-pointer rounded bg-blue-600 py-2 px-4 text-center text-md font-semibold text-white hover:bg-blue-700"
-					type="button"
+					label={"Send Money"}
 				>
-					Send Money
-				</button>
+					S
+				</PrimaryButton>
 			</div>
 		</div>
 	);

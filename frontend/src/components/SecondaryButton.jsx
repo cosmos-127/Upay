@@ -5,7 +5,7 @@ function SecondaryButton({ onClick, label }) {
 			<button
 				onClick={onClick}
 				type="button"
-				className="justify-center rounded-md text-md font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full  bg-sky-500  hover:bg-sky-600 text-white"
+				className="justify-center rounded-md text-md font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full  bg-gray-400  hover:bg-gray-500 text-white"
 			>
 				{label}
 			</button>

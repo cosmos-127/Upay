@@ -5,7 +5,7 @@ function PrimaryButton({ label, onClick }) {
 			<button
 				onClick={onClick}
 				type="button"
-				className="justify-center rounded-md text-md font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full  bg-blue-600  hover:bg-blue-700 text-white"
+				className="justify-center rounded-md text-md font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full  bg-blue-500  hover:bg-blue-600 text-white"
 			>
 				{label}
 			</button>
