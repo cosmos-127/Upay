@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { baseURL } from "../url";
+import { backendURL } from "../url";
 
 function Users() {
 	const [users, setUsers] = useState([]);
@@ -11,7 +11,7 @@ function Users() {
 
 	useEffect(() => {
 		axios
-			.get(`${baseURL}/api/v1/user/bulk?filter=${filter}`, {
+			.get(`${backendURL}/api/v1/user/bulk?filter=${filter}`, {
 				headers: {
 					Authorization: "Bearer " + localStorage.getItem("token"),
 				},
