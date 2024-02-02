@@ -6,6 +6,7 @@ import { useState } from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import { backendURL } from "../url";
 
+
 function Signin() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
@@ -13,8 +14,8 @@ function Signin() {
 
 	return (
 		<>
-			<div>
-				<div className="w-screen font-sans text-gray-900">
+			<div className="animate__animated animate__fadeIn animate__slow">
+				<div className="w-screen font-sans text-gray-900 ">
 					<div className="mx-auto w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
 						<div className="mx-2 py-10 text-center md:mx-auto md:w-2/3 md:py-10">
 							<h1 className="mb-4 text-2xl font-black leading-4 sm:text-3xl xl:text-4xl">
@@ -28,7 +29,7 @@ function Signin() {
 					</div>
 				</div>
 
-				<div className="md:w-2/3 mx-auto w-full pb-10 sm:max-w-screen-sm md:max-w-screen-md lg:w-1/3 lg:max-w-screen-lg xl:max-w-screen-xl">
+				<div className="md:w-2/3 mx-auto w-full pb-10 sm:max-w-screen-sm md:max-w-screen-md lg:w-1/3 lg:max-w-screen-lg xl:max-w-screen-xl ">
 					<form
 						className="mb-4 border border-gray-100 py-10 px-8"
 						style={{

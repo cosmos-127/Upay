@@ -5,6 +5,7 @@ import Signin from "./screens/Signin";
 import Dashboard from "./screens/Dashboard";
 import { SendMoney } from "./screens/SendMoney";
 import Home from "./screens/Home";
+import "animate.css";
 
 function App() {
 	return (

@@ -17,7 +17,7 @@ export const SendMoney = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div className="flex justify-center h-screen bg-gray-100 ">
+		<div className="flex justify-center h-screen bg-gray-100 animate__animated animate__fadeIn animate__slow">
 			<div className="h-full flex flex-col justify-center">
 				<div
 					className="border h-min max-w-md p-6 space-y-8 w-96 bg-white rounded-lg"
@@ -27,12 +27,12 @@ export const SendMoney = () => {
 							"30px 30px 75px #cacaca, -30px -30px 75px #f6f6f6",
 					}}
 				>
-					<div className="flex flex-col space-y-1.5 p-4">
-						<h2 className="mb-4 text-2xl font-black leading-4 sm:text-3xl xl:text-4xl text-center">
+					<div className="flex flex-col space-y-1.5 p-2">
+						<h2 className="mb-4 text-1xl font-black leading-4 sm:text-2xl xl:text-3xl text-center">
 							Send Money
 						</h2>
 					</div>
-					<div className="p-6">
+					<div className="p-4">
 						<div className="flex items-center space-x-4">
 							<div className="w-12 h-12 rounded-full  bg-blue-500 flex items-center justify-center">
 								<span className="text-2xl text-white">
