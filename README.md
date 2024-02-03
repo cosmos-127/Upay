@@ -1,13 +1,24 @@
 # Upay: Simple Payment Gateway using MERN Stack
 
-![Image description](./frontend/public/images/homepage.png)
-![Image description](./frontend/public/images/signupPage.png)
-![Image description](./frontend/public/images/dashboard.png)
-![Image description](./frontend/public/images/sendmoney.png)
-
 ## Project Description
 
 Upay is a straightforward payment gateway application developed using the MERN (MongoDB, Express.js, React, Node.js) stack. The application enables users to perform seamless and secure transactions, providing a convenient payment solution.
+
+#### Home Page
+
+![Image description](./frontend/public/images/homepage.png)
+
+#### SignUp Page
+
+![Image description](./frontend/public/images/signupPage.png)
+
+#### Dashboard Page
+
+![Image description](./frontend/public/images/dashboard.png)
+
+#### Transaction Page
+
+![Image description](./frontend/public/images/sendmoney.png)
 
 ## Table of Contents
 
@@ -26,8 +37,6 @@ Upay is a straightforward payment gateway application developed using the MERN (
 -   [Contributing](#contributing)
 
 ## Technologies Used
-
-### Frontend Libraries
 
 ### Frontend Libraries
 
@@ -149,14 +158,16 @@ Now you have the Upay application running locally. You can explore the features 
 
 The Upay application is deployed with the frontend hosted on Netlify and the backend on Render.
 
-### Frontend Deployment 
+### Frontend Deployment
+
 #### Netlify
 
 The Upay frontend is hosted on Netlify. You can access the live application by visiting [Upay - Simple Payment Gateway](https://upay-simple-payment-service.netlify.app/).
 
 Netlify automatically deploys the frontend when changes are pushed to the `main` branch of the GitHub repository. The deployment process is configured through Netlify's continuous integration.
 
-### Backend Deployment 
+### Backend Deployment
+
 #### Render
 
 The Upay backend is hosted on Render. The backend server provides the necessary APIs and functionality to support the frontend application.
